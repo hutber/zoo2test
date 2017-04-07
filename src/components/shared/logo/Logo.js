@@ -1,11 +1,10 @@
 import React  from 'react';
-import InlineSVG from 'svg-inline-react';
-
+import style from './_Logo.css';
 
 const Logo = React.createClass ({
     render() {
         return (
-          <InlineSVG src={require("svg-inline-loader!../../../assets/Nopa_Logo.svg")} />
+          <h1 className={style.logo}>Logo</h1>
         );
     }
 });
