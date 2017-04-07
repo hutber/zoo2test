@@ -8,6 +8,7 @@ export default class Routes extends Component {
         return (
             <div>
                 <Route exact path="/" component={Home}>
+                  <Route path="/home" component={Home} />
                 </Route>
             </div>
         )

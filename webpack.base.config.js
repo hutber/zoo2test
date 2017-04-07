@@ -41,10 +41,10 @@ module.exports = {
         test: /\.(jpg|png)$/,
         loader: 'url?limit=25000'
       },
-      {
-        test: /\.svg$/,
-        use: ['babel-loader', 'svg-react-loader']
-      },
+	    {
+		    test: /\.svg$/,
+		    loader: 'svg-inline-loader'
+	    },
       {
         test: /\.css$/,
         use: [
