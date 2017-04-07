@@ -1,0 +1,35 @@
+{
+  "name": "zoo2test",
+  "version": "1.0.0",
+  "description": "For my test",
+  "main": "./src/index.js",
+  "scripts": {
+    "prebuild": "rimraf ./dist",
+    "test": "nyc mocha --reporter tap 'test/**/*.spec.js'",
+    "build": "webpack --optimize-minimize --config ./webpack.prod.config.js",
+    "start": "webpack-dashboard -- webpack-dev-server --config ./webpack.config.js",
+    "simple": "webpack-dev-server --config ./webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamiehutber/zoo2test.git"
+  },
+  "keywords": [
+    "zoo2",
+    "test"
+  ],
+  "author": "jamie@hutber.com",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jamiehutber/zoo2test/issues"
+  },
+  "homepage": "https://github.com/jamiehutber/zoo2test#readme",
+  "devDependencies": {
+    "hutber-conventional-changelog": "^1.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/hutber-conventional-changelog"
+    }
+  }
+}
